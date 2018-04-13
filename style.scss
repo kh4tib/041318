@@ -45,6 +45,12 @@ body {
 
                 div {
                     margin-left: 2rem;
+                    cursor: pointer;
+                    transition: 300ms ease-in-out;
+                
+                    &:hover {
+                        color: blueviolet;
+                    }   
                 }
             }
         }
@@ -83,6 +89,12 @@ body {
                 color: #fff;
                 outline: none;
                 border: none;
+                cursor: pointer;
+                transition: 300ms ease-in-out;
+
+                &:hover {
+                    background: darken($color: blueviolet, $amount: 10%);
+                }
             }
         }
     }
@@ -103,6 +115,12 @@ body {
 
                      svg{
                         fill: blueviolet;
+                        cursor: pointer;
+                        transition: 300ms ease-in-out;
+                    
+                        &:hover {
+                            fill: darken($color: blueviolet, $amount: 30%)
+                        }
                      }
                  }
 
@@ -121,6 +139,12 @@ body {
 
                             svg {
                                 fill: blueviolet;
+                                cursor: pointer;
+                                transition: 300ms ease-in-out;
+                            
+                                &:hover {
+                                    fill: darken($color: blueviolet, $amount: 30%)
+                                }
                             }
                         }
 
@@ -130,6 +154,12 @@ body {
 
                             svg {
                                 fill: blueviolet;
+                                cursor: pointer;
+                                transition: 300ms ease-in-out;
+                            
+                                &:hover {
+                                    fill: darken($color: blueviolet, $amount: 30%)
+                                }
                             }
                         }
                     }
@@ -160,6 +190,12 @@ body {
                 transform: rotate(90deg);
                 text-decoration: none;
                 color: #fff;
+                cursor: pointer;
+                transition: 300ms ease-in-out;
+            
+                &:hover {
+                    color: blueviolet;
+                }
             }
         }
     }
