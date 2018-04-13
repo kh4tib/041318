@@ -1,0 +1,173 @@
+// Global Style
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+// Main Styles
+
+.main {
+    width: 100%;
+    height: 100%;
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 5rem 1fr 5rem;
+        grid-template-columns: 5rem 1fr 5rem;
+    }
+}
+
+// Contet Styles
+
+.content {
+    &__header {
+        grid-area: 1 / 2 / 2 / 4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+
+        .header {
+            &__contact {
+                display: flex;
+                color: #fff;
+
+                div {
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+
+    &__details {
+        grid-area: 2 / 2 / 4 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2rem;
+
+        .details {
+            &__subtitle {
+                font-size: .825rem;
+                text-transform: uppercase;
+                letter-spacing: .1rem;
+                color: #fff;
+            }
+
+            &__title {
+                font-size: 4rem;
+                font-weight: 700;
+                line-height:4rem;
+                margin-top: 2rem;
+                color: #fff;
+            }
+
+            &__button {
+                margin-top: 2rem;
+                width: 10rem;
+                height: 3rem;
+                font-size: 0.825rem;
+                font-family: 'IBM Plex Mono', monospace;
+                background: blueviolet;
+                color: #fff;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+
+    &__aside__left {
+        grid-area: 1 / 1 / 4 / 2;
+
+        .aside__left__container {
+             height: 100%;
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+             align-items: center;
+
+             .container {
+                 &__menu {
+                     margin-top: 2rem;
+
+                     svg{
+                        fill: blueviolet;
+                     }
+                 }
+
+                 &__navigation {
+                     display: flex;
+                     width: 10rem;
+                     justify-content: space-between;
+                     align-items: center;
+                     transform: rotate(90deg);
+
+                    .navigation {
+                        &__forward {
+                            width: 1rem;
+                            height: 1rem;
+                            transform: rotate(180deg);
+
+                            svg {
+                                fill: blueviolet;
+                            }
+                        }
+
+                        &__backward {
+                            width: 1rem;
+                            height:1rem;
+
+                            svg {
+                                fill: blueviolet;
+                            }
+                        }
+                    }
+                 }
+
+                 &__copyright {
+                     margin-bottom: 2rem;
+                     color: blueviolet;
+                 }
+             }
+        }
+    }
+
+    &__aside__right {
+        grid-area: 2 / 3 / 4 / 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 2rem 0;
+
+        .aside__right__socials {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+            a {
+                transform: rotate(90deg);
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    &__background {
+        grid-area: 1 / 2 / 4 / 4;
+        background: url(https://images.unsplash.com/photo-1506377295352-e3154d43ea9e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=45b23363a3f913999845ba0f7c6358a0&auto=format&fit=crop&w=1534&q=80) center  / cover no-repeat;
+        filter: grayscale(100%);
+        z-index: -1;
+    }
+}
